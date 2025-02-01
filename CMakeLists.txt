@@ -95,6 +95,7 @@ link_directories("/opt/galbot/thirdparty/gcc940-x86_64-ubuntu2004-gnu/lib")
 # POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_if_different ${TORCH_DLLS}
 # ${CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG}) endif(MSVC) endif()
 add_subdirectory(src/hw1)
+add_subdirectory(src/hw2)
 # Add test
 if(CUDA_LEARN_BUILD_TESTS)
   add_subdirectory(tests)
